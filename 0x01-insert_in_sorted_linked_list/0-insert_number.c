@@ -47,7 +47,6 @@ listint_t *insert_node(listint_t **head, int number)
 
 		tmp = tmp->next;
 	}
-	printf("here I am %d\n", number);
 
 	return (NULL);
 }
