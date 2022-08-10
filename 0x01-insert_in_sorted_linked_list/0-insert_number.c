@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 listint_t *create_node(listint_t *point, int num);
 /**
@@ -39,8 +40,14 @@ listint_t *insert_node(listint_t **head, int number)
 
 			return (new);
 		}
+		if (tmp->next->next == NULL && tmp->next->n < number)
+		{
+			add_nodeint_end(&tmp, number);
+		}
 
 		tmp = tmp->next;
 	}
+	printf("here I am %d\n", number);
+
 	return (NULL);
 }
