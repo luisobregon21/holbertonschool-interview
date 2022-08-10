@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-listint_t *create_node(listint_t *point, int num);
 /**
  * *insert_node - inserts a number into a sorted singly linked list.
  * @head: pointer to the pointer of the head.
