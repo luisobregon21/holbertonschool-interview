@@ -7,19 +7,17 @@ def minOperations(n):
     method calculates the fewest number of operations
     needed to result in exactly n H characters in the file.
     '''
-    if n < 2 or type(n) is not int:
+    if n < 2:
         return 0
 
-    num = 1
-    tmp = 0
-    count = 0
-    while num < n:
+    count = 1
+    li = list()
+    value = n
+    while value != 1:
         count += 1
-        tmp = num
-        if num+tmp >= n:
-            break
-        num += tmp
-        count += 1
-        num += tmp
-        count += 1
-    return count
+        if value % count == 0:
+            while value % count == 0 and value != 1:
+                value = value / count
+                li.append(count)
+
+    return sum(li)
