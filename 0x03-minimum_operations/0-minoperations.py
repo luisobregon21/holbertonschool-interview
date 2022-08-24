@@ -14,12 +14,12 @@ def minOperations(n):
     tmp = 0
     count = 0
     while num < n:
-        count += 1  # copy
+        count += 1
         tmp = num
         if num+tmp >= n:
             break
-        num += tmp  # paste
+        num += tmp
         count += 1
-        num += tmp  # paste
+        num += tmp
         count += 1
     return count
