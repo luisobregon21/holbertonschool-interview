@@ -43,4 +43,3 @@ except KeyboardInterrupt:
     for key in sorted(codes):
         print("{}: {}".format(key, codes[key]))
     raise
-
