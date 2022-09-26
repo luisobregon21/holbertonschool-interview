@@ -1,1 +1,1 @@
-# Interview Questions for Holberton
+# 0x08-palindrome_integer
